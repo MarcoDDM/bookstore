@@ -1,5 +1,6 @@
 import React from 'react';
 import Books from './Books';
+import NewBookForm from './NewBookForm';
 
 const BookList = () => {
   const books = [
@@ -34,6 +35,9 @@ const BookList = () => {
             chapter={book.chapter}
           />
         ))}
+      </div>
+      <div>
+        <NewBookForm />
       </div>
     </div>
   );
