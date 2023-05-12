@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
+import BookList from './components/BookList';
 import Categories from './components/Categories';
 import Navigation from './components/Navigation';
 import './App.css';
@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Navigation />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={<BookList />} />
         <Route path="/categories" element={<Categories />} />
       </Routes>
     </BrowserRouter>
