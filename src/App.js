@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import BookList from './components/BookList';
-import NewBookForm from './components/NewBookForm';
+import Home from './components/Home';
+import Categories from './components/Categories';
 import Navigation from './components/Navigation';
 import './App.css';
 
@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
       <Navigation />
       <Routes>
-        <Route exact path="/" component={BookList} />
-        <Route path="/categories" component={NewBookForm} />
+        <Route exact path="/" element={<Home />} />
+        <Route path="/categories" element={<Categories />} />
       </Routes>
     </BrowserRouter>
   );
