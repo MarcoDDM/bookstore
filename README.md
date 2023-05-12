@@ -1,65 +1,171 @@
-# React and Redux
+<a name="readme-top"></a>
 
-If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
+<div align="center">
 
-## Set-up GitHub Actions
+  <img src="soyMarco.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-This GitHub Action is going to run [ESLint](https://eslint.org/) and [Stylelint](https://stylelint.io/) to help you find style issues.
+</div>
 
-[Stylelint](https://stylelint.io/) is a linter for your stylesheets that helps you avoid errors and enforce conventions.
+<!-- TABLE OF CONTENTS -->
 
-[ESLint](https://eslint.org/) is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+# 📗 Table of Contents
 
-Please do the following **steps in this order**:
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-    - **Remember** to use the file linked above
-    - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub Actions:
+<!-- PROJECT DESCRIPTION -->
 
-![gh actions checks](../assets/images/gh-actions-eslint-stylelint-checks.png)
+# 📖 Bookstore <a name="about-project"></a>
 
-Click on the `Details` link to see the full output and the errors that need to be fixed:
+**Bookstore** is a project to learn how to consume an REST API and work with REACT.js using hooks and props.
 
-![gh actions failing checks](../assets/images/gh-actions-html-css-failing-checks.png)
+## 🛠 Built With <a name="built-with"></a>
 
-## Set-up linters in your local env
+### Tech Stack <a name="tech-stack"></a>
 
-### ESLint
+<details>
+  <summary>HTML</summary>
+  <ul>
+    <li>REACT</li>
+  </ul>
+</details>
 
-1. Run 
-    ```
-    npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x  @babel/preset-react@7.x @babel/preset-react@7.x
-    ```
-    *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
-2. Copy [.eslintrc.json](./.eslintrc.json) and [.babelrc](./.babelrc) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx eslint .` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/cli#autofixing-errors) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+<details>
+  <summary>CSS</summary>
+  <ul>
+    <li>CSS</li>
+  </ul>
+</details>
 
-### Stylelint
+<details>
+<summary>Javascript</summary>
+  <ul>
+    <li>Javascript</li>
+  </ul>
+</details>
 
-1. Run
+<!-- Features -->
 
-   ```
-   npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-   ```
+### Key Features <a name="key-features"></a>
 
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
+- **Calculator**
+- **Get quotes**
 
-2. Copy [.stylelintrc.json](./.stylelintrc.json) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/cli#autofixing-errors) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Test/Deployment Actions
+LIVE DEMO
 
-Feel free to add your own deployment actions which can run your tests and deploy to Heroku.
+## 🚀 Live Demo <a name="live-demo"></a>
 
-Make sure that you do not modify the [`.github/workflows/linters.yml`](.github/workflows/linters.yml) but that you create a separe GitHub Action workflow file for that.
+- [Live Demo](https://marcoalmada.online)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+This project uses [Create React App](https://github.com/facebook/create-react-app).
+
+To run the app in the development mode, you can use:
+
+```
+npm start
+```
+
+This opens [http://localhost:3000](http://localhost:3000) to view it in your browser. The page will reload when you make changes and any lint errors will appear in the console.
+
+To launch the test runner in the interactive watch mode:
+
+```
+npm test
+```
+
+See the [running tests](https://facebook.github.io/create-react-app/docs/running-tests) section for more information.
+
+To build the app for production to the `build` folder, use:
+
+```
+npm run build
+```
+
+React will be correctly bundled in production mode and the build optimized for the best performance. The build will be minified and the filenames will include the hashes.
+
+The command `npm run eject` will remove the single build dependency from your project, copying all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. However, `eject` is a one-way operation, so use it with caution.
+
+To learn more, see the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) or the [React documentation](https://reactjs.org/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Author**
+
+- GitHub: [@MarcoDDM](https://github.com/MarcoDDM)
+- Twitter: [@nerdpiola](https://twitter.com/nerdpiola)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/marcoalmadaar)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Different style**
+- [ ] **Users**
+- [ ] **Sharing**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project give a star to the project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank to all my coding partners.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
