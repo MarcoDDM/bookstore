@@ -21,7 +21,7 @@ const BookList = () => {
             id={book.id}
             title={book.title}
             author={book.author}
-            onRemove={() => handleRemove(book.id)}
+            onRemove={handleRemove}
           />
         ))}
       </div>

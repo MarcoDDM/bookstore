@@ -3,15 +3,21 @@ import PropTypes from 'prop-types';
 
 const Books = ({
   id, title, author, onRemove,
-}) => (
-  <div>
-    <h3>{title}</h3>
-    <p>{author}</p>
-    <button type="button" onClick={() => onRemove(id)}>
-      Remove
-    </button>
-  </div>
-);
+}) => {
+  const handleRemove = () => {
+    onRemove(id);
+  };
+
+  return (
+    <div>
+      <h3>{title}</h3>
+      <p>{author}</p>
+      <button type="button" onClick={handleRemove}>
+        Remove
+      </button>
+    </div>
+  );
+};
 
 Books.propTypes = {
   id: PropTypes.string.isRequired,
