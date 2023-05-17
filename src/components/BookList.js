@@ -1,10 +1,16 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import Books from './Books';
 import NewBookForm from './NewBookForm';
+import { removeBook } from '../redux/books/booksSlice';
 
 const BookList = () => {
   const books = useSelector((state) => state.books);
+  const dispatch = useDispatch();
+
+  const handleRemove = (id) => {
+    dispatch(removeBook(id));
+  };
 
   return (
     <div>
@@ -12,11 +18,10 @@ const BookList = () => {
         {books.map((book) => (
           <Books
             key={book.id}
-            genre={book.category}
+            id={book.id}
             title={book.title}
             author={book.author}
-            progress={book.progress}
-            chapter={book.chapter}
+            onRemove={() => handleRemove(book.id)}
           />
         ))}
       </div>
