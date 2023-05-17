@@ -14,13 +14,14 @@ const categories = [
 
 const NewBookForm = () => {
   const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
   const [category, setCategory] = useState(categories[0]);
 
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addBook({ title, category }));
+    dispatch(addBook({ title, category, author }));
     setTitle('');
     setCategory(categories[0]);
   };
@@ -35,6 +36,17 @@ const NewBookForm = () => {
           id="title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
+        />
+      </label>
+
+      <label htmlFor="author">
+        Author:
+        <input
+          type="text"
+          name="author"
+          id="author"
+          value={author}
+          onChange={(e) => setAuthor(e.target.value)}
         />
       </label>
 
