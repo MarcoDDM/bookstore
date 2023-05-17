@@ -1,26 +1,10 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Books from './Books';
 import NewBookForm from './NewBookForm';
 
 const BookList = () => {
-  const books = [
-    {
-      id: 1,
-      genre: 'Action',
-      title: 'The Hunger Games',
-      author: 'Suzanne Collins',
-      progress: '64%',
-      chapter: 'Chapter 17',
-    },
-    {
-      id: 2,
-      genre: 'Fiction',
-      title: 'Dune',
-      author: 'Frank Herbert',
-      progress: '8%',
-      chapter: 'Chapter 3: "A Lesson Learned"',
-    },
-  ];
+  const books = useSelector((state) => state.books);
 
   return (
     <div>
@@ -28,7 +12,7 @@ const BookList = () => {
         {books.map((book) => (
           <Books
             key={book.id}
-            genre={book.genre}
+            genre={book.category}
             title={book.title}
             author={book.author}
             progress={book.progress}
